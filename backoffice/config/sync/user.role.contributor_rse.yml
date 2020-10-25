@@ -1,0 +1,35 @@
+uuid: b0b4773e-c667-4e39-a4ee-929d97700d95
+langcode: fr
+status: true
+dependencies: {  }
+id: contributor_rse
+label: 'Contributeur RSE'
+weight: -8
+is_admin: null
+permissions:
+  - 'access environment indicator'
+  - 'access media overview'
+  - 'access toolbar'
+  - 'create content translations'
+  - 'create image media'
+  - 'create media'
+  - 'create page_rse content'
+  - 'delete media'
+  - 'delete own image media'
+  - 'delete own page_rse content'
+  - 'edit any page_rse content'
+  - 'translate page_rse node'
+  - 'translate paragraph'
+  - 'update content translations'
+  - 'update media'
+  - 'use page_rse_workflow transition create_new_draft'
+  - 'use page_rse_workflow transition ready_for_review'
+  - 'use text format html_simple'
+  - 'view all media revisions'
+  - 'view any unpublished content'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view page_rse revisions'
+  - 'view rse in toolbar'
+  - 'view the administration theme'
+  - 'view unpublished paragraphs'

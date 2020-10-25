@@ -1,0 +1,10 @@
+uuid: 639a3107-4ab9-4e73-99f0-91269861e3bc
+langcode: fr
+status: true
+dependencies: {  }
+id: agenda_promote
+label: 'Agenda mise en avant'
+icon_uuid: null
+icon_default: null
+description: 'Un champ de recherche de contenu de type : "Agenda" (Obligatoire)'
+behavior_plugins: {  }

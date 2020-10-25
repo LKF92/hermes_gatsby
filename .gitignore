@@ -1,0 +1,7 @@
+.DS_Store
+.idea
+frontoffice/node_modules
+.vscode
+*.sql
+iaac/lambda/__pycache__
+frontoffice/redirects.json

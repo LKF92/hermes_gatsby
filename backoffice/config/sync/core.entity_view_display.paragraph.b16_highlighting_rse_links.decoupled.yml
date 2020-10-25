@@ -1,0 +1,32 @@
+uuid: 752e680c-71ae-4320-a405-b59df27d5cfe
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.decoupled
+    - field.field.paragraph.b16_highlighting_rse_links.field_b16_rse_link_ref
+    - paragraphs.paragraphs_type.b16_highlighting_rse_links
+  module:
+    - decoupled_toolbox
+id: paragraph.b16_highlighting_rse_links.decoupled
+targetEntityType: paragraph
+bundle: b16_highlighting_rse_links
+mode: decoupled
+content:
+  field_b16_rse_link_ref:
+    type: decoupled_entity_reference
+    weight: 1
+    label: above
+    settings:
+      decoupled_field_key: link_rse
+    third_party_settings: {  }
+    region: content
+  type:
+    type: decoupled_entity_reference_id
+    weight: 0
+    region: content
+    label: above
+    settings:
+      decoupled_field_key: bundle
+    third_party_settings: {  }
+hidden: {  }

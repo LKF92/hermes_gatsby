@@ -1,0 +1,29 @@
+uuid: 743ea410-67af-452b-a909-116655b5af1e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year
+    - node.type.document
+    - taxonomy.vocabulary.year
+id: node.document.field_year
+field_name: field_year
+entity_type: node
+bundle: document
+label: 'Année de classification'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      year: year
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

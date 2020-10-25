@@ -1,0 +1,31 @@
+uuid: e77e12b3-5693-4c1c-a623-34dabcac3b1c
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.media.token
+    - field.field.media.image.field_media_image
+    - image.style.large
+    - media.type.image
+  module:
+    - image
+id: media.image.token
+targetEntityType: media
+bundle: image
+mode: token
+content:
+  field_media_image:
+    label: visually_hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    weight: 1
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @file
+ * Contains decoupled_toolbox_redirect.module.
+ */
+
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\decoupled_toolbox_redirect\Plugin\Field\RedirectSourcePathFieldItemList;
+
+/**
+ * Implements hook_entity_base_field_info().
+ */
+function decoupled_toolbox_redirect_entity_base_field_info(EntityTypeInterface $entity_type) {
+  $fields = [];
+
+  // Only apply to entity types that provide a canonical link template.
+  if ($entity_type->hasLinkTemplate('canonical')) {
+    $fields['redirect_source__path'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('URL redirects'))
+      ->setTranslatable(TRUE)
+      ->setComputed(TRUE)
+      ->setCardinality(BaseFieldDefinition::CARDINALITY_UNLIMITED)
+      ->setClass(RedirectSourcePathFieldItemList::class)
+      ->setDisplayConfigurable('view', TRUE);
+  }
+
+  return $fields;
+}

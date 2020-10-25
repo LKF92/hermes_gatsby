@@ -1,0 +1,37 @@
+uuid: 9fed150d-1ecd-485e-a773-b29820d868d3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.b16_rse_link.field_b16_image
+    - field.field.paragraph.b16_rse_link.field_b16_link
+    - paragraphs.paragraphs_type.b16_rse_link
+  module:
+    - link
+id: paragraph.b16_rse_link.default
+targetEntityType: paragraph
+bundle: b16_rse_link
+mode: default
+content:
+  field_b16_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_b16_link:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

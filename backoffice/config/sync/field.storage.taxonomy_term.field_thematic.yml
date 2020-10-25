@@ -1,0 +1,42 @@
+uuid: f5f06050-aa05-4c12-a2ee-c192c9c7648d
+langcode: fr
+status: true
+dependencies:
+  module:
+    - options
+    - taxonomy
+id: taxonomy_term.field_thematic
+field_name: field_thematic
+entity_type: taxonomy_term
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: publications
+      label: Publications
+    -
+      value: press_release
+      label: 'Communiqué de presse'
+    -
+      value: regulated_information
+      label: 'Informations réglementées'
+    -
+      value: other_legal_information
+      label: 'Autres informations juridiques'
+    -
+      value: officers
+      label: 'Mandataires sociaux'
+    -
+      value: general_assembly
+      label: 'Assemblée générale'
+    -
+      value: rse
+      label: RSE
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,7 @@
+decoupled_toolbox.entity_decoupled_data.collection:
+  path: '/decoupled-api/{type}/{bundle}/collection'
+  methods: [GET]
+  defaults:
+    _controller: '\Drupal\decoupled_toolbox\Controller\EntityDecoupledDataController::collection'
+  requirements:
+    _permission: 'access content'

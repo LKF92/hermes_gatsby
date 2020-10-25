@@ -1,0 +1,14 @@
+uuid: 2868fcd3-e91a-4e9d-874b-81b37cd9517a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.contributor_financial
+  module:
+    - user
+id: user_remove_role_action.contributor_financial
+label: 'Enlever le rôle Contributeur Finance des utilisateurs sélectionnés'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: contributor_financial

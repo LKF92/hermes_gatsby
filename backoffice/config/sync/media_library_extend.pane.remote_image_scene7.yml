@@ -1,0 +1,15 @@
+uuid: db7d016a-991e-4750-b24e-a2ecec359f64
+langcode: fr
+status: true
+dependencies: {  }
+id: remote_image_scene7
+label: 'Image distante Scene7'
+bundle: image
+source_plugin: scene7_image
+source_plugin_configuration:
+  items_per_page: '20'
+  urlApi: 'http://www.scene7.com/IpsApi/xsd/2014-04-03'
+  user: florian.giral@mydropteam.com
+  password: $kill92iS$
+  appName: hermes-digital
+  appVersion: '1.0'

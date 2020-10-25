@@ -1,0 +1,58 @@
+uuid: 6cca3020-154d-43c5-94fb-40768079631e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.media.remote_video_scene_7.field_media_remote_video_scene7
+    - field.field.media.remote_video_scene_7.field_subtitle
+    - field.field.media.remote_video_scene_7.field_video_thumbnail
+    - media.type.remote_video_scene_7
+  module:
+    - image
+    - link
+id: media.remote_video_scene_7.default
+targetEntityType: media
+bundle: remote_video_scene_7
+mode: default
+content:
+  field_media_remote_video_scene7:
+    label: above
+    weight: 1
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_subtitle:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_video_thumbnail:
+    weight: 0
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  bundle: true
+  created: true
+  langcode: true
+  name: true
+  redirect_source__path: true
+  thumbnail: true
+  uid: true

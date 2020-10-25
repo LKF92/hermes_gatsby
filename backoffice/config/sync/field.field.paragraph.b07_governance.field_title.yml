@@ -1,0 +1,19 @@
+uuid: 7c55de88-23de-4557-a7fd-9a4bb6aa643e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.b07_governance
+id: paragraph.b07_governance.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: b07_governance
+label: 'Titre sur plusieurs lignes'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

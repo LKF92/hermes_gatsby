@@ -1,0 +1,17 @@
+uuid: 4b26efe3-4d42-4ecf-8169-7185f58f7a17
+langcode: fr
+status: false
+dependencies: {  }
+id: prod
+label: Prod
+description: ''
+folder: ../config/prod
+module:
+  s3fs: 0
+  he_amazon_simple_storage_helper: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

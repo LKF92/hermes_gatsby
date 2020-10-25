@@ -1,0 +1,5 @@
+build.add_form:
+  route_name: entity.build.add_form
+  title: 'Add build'
+  appears_on:
+    - entity.build.collection

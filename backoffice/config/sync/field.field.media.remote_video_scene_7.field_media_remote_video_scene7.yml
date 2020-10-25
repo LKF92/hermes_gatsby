@@ -1,0 +1,23 @@
+uuid: a00d8ef8-9c80-4198-830a-9ed7901b8d01
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_remote_video_scene7
+    - media.type.remote_video_scene_7
+  module:
+    - link
+id: media.remote_video_scene_7.field_media_remote_video_scene7
+field_name: field_media_remote_video_scene7
+entity_type: media
+bundle: remote_video_scene_7
+label: 'Remote video Scene7'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

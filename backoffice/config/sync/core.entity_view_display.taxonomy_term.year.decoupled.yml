@@ -1,0 +1,31 @@
+uuid: 29188d4a-522a-4b8c-b5f3-784bba5a8402
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.decoupled
+    - taxonomy.vocabulary.year
+  module:
+    - decoupled_toolbox
+id: taxonomy_term.year.decoupled
+targetEntityType: taxonomy_term
+bundle: year
+mode: decoupled
+content:
+  name:
+    label: hidden
+    type: decoupled_generic
+    weight: 0
+    region: content
+    settings:
+      decoupled_field_key: name
+    third_party_settings: {  }
+hidden:
+  changed: true
+  description: true
+  langcode: true
+  parent: true
+  redirect_source__path: true
+  status: true
+  tid: true
+  weight: true

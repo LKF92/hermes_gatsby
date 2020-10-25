@@ -1,0 +1,18 @@
+uuid: f26d2c78-08b9-4e2f-8ac0-3e5a30d05329
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+id: menu_link_content.tools.description
+field_name: description
+entity_type: menu_link_content
+bundle: tools
+label: Description
+description: 'S''affiche au survol du lien du menu.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,9 @@
+uuid: 7a43d861-fe68-421e-ae2f-076f3bece0e5
+langcode: fr
+status: true
+dependencies: {  }
+id: administration
+label: Administration
+weight: null
+menu: administration
+rewrite_label: false

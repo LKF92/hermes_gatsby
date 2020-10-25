@@ -1,0 +1,10 @@
+uuid: 9580f9eb-dc0b-4499-a3a9-627b10b35db1
+langcode: fr
+status: true
+dependencies:
+  module:
+    - comment
+id: comment.decoupled
+label: Decoupled
+targetEntityType: comment
+cache: true

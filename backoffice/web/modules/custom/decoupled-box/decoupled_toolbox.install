@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Contains decoupled_toolbox.install.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * @throws \Drupal\decoupled_toolbox\Exception\DecoupledSetupFailureException
+ */
+function decoupled_toolbox_install() {
+  /* @var \Drupal\decoupled_toolbox\Service\EntityViewDisplayManagerInterface $entityViewDisplayManager */
+  $entityViewDisplayManager = \Drupal::service('decoupled.entity_view_display.manager');
+  $entityViewDisplayManager->prepareDecoupledDisplayForAllEntityTypes();
+}

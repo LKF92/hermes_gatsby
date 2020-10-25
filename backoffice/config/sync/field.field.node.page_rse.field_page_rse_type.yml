@@ -1,0 +1,21 @@
+uuid: 5b27d9cb-563a-4dfc-b25f-47bf1ca62fd1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_rse_type
+    - node.type.page_rse
+  module:
+    - options
+id: node.page_rse.field_page_rse_type
+field_name: field_page_rse_type
+entity_type: node
+bundle: page_rse
+label: 'Type de page'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

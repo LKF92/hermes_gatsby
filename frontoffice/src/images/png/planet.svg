@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Planet</title>
+    <desc>Created with Sketch.</desc>
+    <g  stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-882.000000, -2581.000000)">
+            <g  transform="translate(-120.000000, 0.000000)">
+                <g  transform="translate(107.000000, 2439.000000)">
+                    <g  transform="translate(790.000000, 143.000000)">
+                        <g  transform="translate(106.000000, 0.000000)">
+                            <polygon  points="0 0 46 0 46 46 0 46"></polygon>
+                            <path d="M23,0.92 C10.8055527,0.92 0.92,10.8055527 0.92,23 C0.92,35.1944473 10.8055527,45.08 23,45.08 C35.1944473,45.08 45.08,35.1944473 45.08,23 C45.08,10.8055527 35.1944473,0.92 23,0.92 Z"  stroke="#444444" stroke-width="2" stroke-linecap="round"></path>
+                            <path d="M23,0.92 C16.9027764,0.92 11.96,10.8055527 11.96,23 C11.96,35.1944473 16.9027764,45.08 23,45.08 C29.0972236,45.08 34.04,35.1944473 34.04,23 C34.04,10.8055527 29.0972236,0.92 23,0.92 Z"  stroke="#444444" stroke-width="2" stroke-linecap="round"></path>
+                            <path d="M5.888,37.048 C9.936,34.564 16.1,33 23,33 C29.808,33 35.88,34.564 40.02,36.956 M40.112,8.952 C36.064,11.436 29.9,13 23,13 C16.192,13 10.12,11.436 5.98,9.044 M0.92,23 L45.08,23 M23,0.92 L23,45.08"  stroke="#444444" stroke-width="2"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

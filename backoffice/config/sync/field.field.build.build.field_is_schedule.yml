@@ -1,0 +1,24 @@
+uuid: 31216ebd-56fb-4393-a383-d9a464f29f35
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.build.field_is_schedule
+  module:
+    - he_publication_build
+id: build.build.field_is_schedule
+field_name: field_is_schedule
+entity_type: build
+bundle: build
+label: 'Type de publication'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Programmée
+  off_label: Immédiate
+field_type: boolean

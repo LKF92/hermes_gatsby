@@ -1,0 +1,22 @@
+uuid: ab2344ff-3aef-4196-9c04-df8f2c00ec35
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.year
+id: taxonomy_term.year.status
+field_name: status
+entity_type: taxonomy_term
+bundle: year
+label: Publié
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

@@ -1,0 +1,18 @@
+uuid: cde580f0-8494-4b08-8218-5834f3ab8305
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.page_rse
+id: node.page_rse.created
+field_name: created
+entity_type: node
+bundle: page_rse
+label: 'Authored on'
+description: 'L''heure à laquelle le nœud a été créé.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

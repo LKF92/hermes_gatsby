@@ -1,0 +1,82 @@
+uuid: c579a15e-ca5f-41aa-9b49-72039d880a52
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.page_rse
+  enforced:
+    config:
+      0: workbench_email.workbench_email_template.page_rse_awaiting_validation
+      2: workbench_email.workbench_email_template.page_rse_awaiting_correction
+  module:
+    - content_moderation
+    - workbench_email
+third_party_settings:
+  workbench_email:
+    workbench_email_templates:
+      ready_for_review:
+        page_rse_awaiting_validation: page_rse_awaiting_validation
+      create_new_draft: {  }
+      awaiting_correction:
+        page_rse_awaiting_correction: page_rse_awaiting_correction
+id: page_rse_workflow
+label: 'Workflow des pages RSE'
+type: content_moderation
+type_settings:
+  states:
+    archived:
+      published: false
+      default_revision: true
+      label: Archivé
+      weight: 1
+    draft:
+      published: false
+      default_revision: false
+      label: Brouillon
+      weight: -2
+    published:
+      published: true
+      default_revision: true
+      label: Publié
+      weight: 0
+    review:
+      published: false
+      default_revision: false
+      label: Validation
+      weight: -1
+  transitions:
+    archived:
+      label: Archivé
+      from:
+        - published
+      to: archived
+      weight: 1
+    awaiting_correction:
+      label: 'En attente de correction'
+      from:
+        - review
+      to: draft
+      weight: -1
+    create_new_draft:
+      label: 'Créer un nouveau brouillon'
+      to: draft
+      weight: -3
+      from:
+        - draft
+    publish:
+      label: Publié
+      to: published
+      weight: 0
+      from:
+        - published
+        - review
+    ready_for_review:
+      label: 'En attente de validation'
+      from:
+        - draft
+      to: review
+      weight: -2
+  entity_types:
+    node:
+      - page_rse
+  default_moderation_state: draft

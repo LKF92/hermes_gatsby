@@ -1,0 +1,14 @@
+uuid: 2f4909d4-4928-4c33-8833-33948e042f24
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.contributor_rse
+  module:
+    - user
+id: user_remove_role_action.contributor_rse
+label: 'Enlever le rôle Contributeur RSE des utilisateurs sélectionnés'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: contributor_rse

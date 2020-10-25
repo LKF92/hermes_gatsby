@@ -1,0 +1,14 @@
+uuid: e9b136ba-449c-4953-9798-181f214ff68e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.contributor_financial
+  module:
+    - user
+id: user_add_role_action.contributor_financial
+label: 'Ajouter le rôle Contributeur Finance aux utilisateurs sélectionnés'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: contributor_financial

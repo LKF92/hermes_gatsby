@@ -1,0 +1,8 @@
+uuid: ef06a0ac-5a70-44df-8e30-9000b233efa3
+langcode: fr
+status: true
+dependencies: {  }
+name: Année
+vid: year
+description: ''
+weight: 0

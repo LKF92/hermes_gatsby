@@ -1,0 +1,100 @@
+<?php
+
+/**
+ * @file
+ * Contains he_live_preview.module.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\menu_link_content\MenuLinkContentInterface;
+use Drupal\node\NodeInterface;
+use GuzzleHttp\Exception\RequestException;
+use Drupal\Core\Site\Settings;
+
+/**
+ * Implements hook_entity_insert().
+ */
+function he_live_preview_entity_insert(EntityInterface $entity) {
+  if (_is_preview_entity($entity)) {
+    _trigger_preview_refresh($entity, "create");
+  }
+}
+
+/**
+ * Implements hook_entity_update().
+ */
+function he_live_preview_entity_update(EntityInterface $entity) {
+  if (_is_preview_entity($entity)) {
+    _trigger_preview_refresh($entity, "update");
+  }
+}
+
+/**
+ * Implements hook_entity_delete().
+ */
+function he_live_preview_entity_delete(EntityInterface $entity) {
+  if (_is_preview_entity($entity)) {
+    _trigger_preview_refresh($entity, "delete");
+  }
+}
+
+/**
+ * Verify the entity is selected to sync to the Gatsby site.
+ *
+ * @param \Drupal\Core\Entity\EntityInterface $entity
+ *   The entity.
+ *
+ * @return bool
+ *   If the entity type should be sent to Gatsby Preview.
+ */
+function _is_preview_entity(EntityInterface $entity) {
+  if (!$entity instanceof NodeInterface
+    && !$entity instanceof MenuLinkContentInterface) {
+    return FALSE;
+  }
+
+  // Filter by entity bundle.
+  $bundles_filter = [
+    "main",
+    "footer",
+    "main-en",
+    "footer-en",
+    "agenda",
+    "document",
+    "letter_to_shareholders",
+    "page",
+    "page_rse",
+  ];
+
+  if (!in_array($entity->bundle(), $bundles_filter)) {
+    return FALSE;
+  }
+
+  return TRUE;
+}
+
+/**
+ * Triggers Gatsby refresh endpoint.
+ *
+ * @param \Drupal\Core\Entity\EntityInterface $entity
+ *   The entity object.
+ * @param string $action
+ *   The action.
+ */
+function _trigger_preview_refresh(EntityInterface $entity, $action) {
+  $previewServerUrl = Settings::get("jen_refresh_gatsby", NULL);
+
+  if (filter_var($previewServerUrl, FILTER_VALIDATE_URL)) {
+    $options = [
+      "json" => ["id" => $entity->id(), "action" => $action],
+    ];
+
+    try {
+      \Drupal::httpClient()->post($previewServerUrl);
+      \Drupal::logger("gatsby")->info(t("Refresh the Gatsby preview server."));
+    }
+    catch (RequestException $e) {
+      \Drupal::logger("gatsby")->error($e->getMessage());
+    }
+  }
+}

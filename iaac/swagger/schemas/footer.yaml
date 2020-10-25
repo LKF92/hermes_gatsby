@@ -1,0 +1,7 @@
+schema:
+  description: Footer
+  type: object
+  properties:
+    test:
+      type: string
+      exemple: "749"

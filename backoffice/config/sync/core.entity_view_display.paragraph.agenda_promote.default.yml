@@ -1,0 +1,21 @@
+uuid: 94459674-9736-441c-888b-92700a18c0b8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.agenda_promote.field_node_reference
+    - paragraphs.paragraphs_type.agenda_promote
+id: paragraph.agenda_promote.default
+targetEntityType: paragraph
+bundle: agenda_promote
+mode: default
+content:
+  field_node_reference:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

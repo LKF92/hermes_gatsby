@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * @file
+ * Defines additional validations and constraints to paragraph fields.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\EntityTypeInterface;
+
+/**
+ * Make sure field exists and its not empty.
+ *
+ * @param \Drupal\Core\Entity\EntityInterface $entity
+ *   The entity.
+ * @param string $fieldName
+ *   Field to be checked.
+ *
+ * @return bool
+ *   Returns TRUE if field exists and has a non-empty, non-zero value.
+ *   Otherwise returns FALSE.
+ */
+function _is_field_not_empty(EntityInterface $entity, $fieldName) {
+  return $entity->hasField($fieldName) && !$entity->get($fieldName)->isEmpty();
+}
+
+/**
+ * Implements hook_entity_bundle_field_info_alter().
+ */
+function he_paragraph_constraint_entity_bundle_field_info_alter(array &$fields, EntityTypeInterface $entity_type, $bundle) {
+  if ($entity_type->id() === "paragraph" && $bundle === "b07_governance" && isset($fields["field_image_teaser"])) {
+    $fields["field_image_teaser"]->addConstraint("paragraph_governance_constraint", []);
+  }
+}

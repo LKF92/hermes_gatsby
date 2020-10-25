@@ -1,0 +1,8 @@
+name: 'Decoupled Toolbox for Color Field'
+type: module
+description: 'Makes Color Field compatible with Decoupled Toolbox.'
+core: 8.x
+package: 'Decoupled'
+dependencies:
+  - color_field:color_field
+  - decoupled_toolbox:decoupled_toolbox

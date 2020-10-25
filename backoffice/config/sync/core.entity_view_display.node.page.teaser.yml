@@ -1,0 +1,55 @@
+uuid: 68e82eef-af4a-447f-9624-8e58ff464b42
+langcode: fr
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page.field_background_image
+    - field.field.node.page.field_body
+    - field.field.node.page.field_introductory_text
+    - field.field.node.page.field_meta_tag
+    - field.field.node.page.field_page_type
+    - node.type.page
+  module:
+    - user
+id: node.page.teaser
+targetEntityType: node
+bundle: page
+mode: teaser
+content:
+  created:
+    label: hidden
+    type: timestamp
+    weight: 0
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  changed: true
+  field_background_image: true
+  field_body: true
+  field_introductory_text: true
+  field_meta_tag: true
+  field_page_type: true
+  field_videos_youtube: true
+  langcode: true
+  nid: true
+  path: true
+  redirect_source__path: true
+  status: true

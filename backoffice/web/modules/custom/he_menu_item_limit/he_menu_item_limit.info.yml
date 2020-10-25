@@ -1,0 +1,10 @@
+name: 'Menu Item Limit'
+description: 'Allows to control the amount of items per menu.'
+package: Custom
+dependencies:
+  - menu_ui
+type: module
+core: 8.x
+
+
+

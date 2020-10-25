@@ -1,0 +1,9 @@
+name: Admin Menu
+description: Hide menu for specific users role.
+package: Custom
+
+type: module
+core: 8.x
+
+dependencies:
+  - drupal:toolbar

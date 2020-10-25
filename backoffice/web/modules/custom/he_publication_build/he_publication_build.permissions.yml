@@ -1,0 +1,5 @@
+administer build:
+  title: 'Administer build settings'
+  restrict access: true
+access build overview:
+  title: 'Access build overview page'

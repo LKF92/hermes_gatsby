@@ -1,0 +1,6 @@
+status: 1
+pattern: '[node:field_title]'
+escape: true
+dependencies:
+  config:
+    - node.type.letter_to_shareholders

@@ -1,0 +1,6 @@
+name: Live Preview Refresh
+description: Setup Drupal to ping the URL of the preview server whenever content is changed.
+package: Custom
+
+type: module
+core: 8.x

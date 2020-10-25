@@ -1,0 +1,85 @@
+uuid: 71fa2078-02b2-4d39-a434-19b4f5a53414
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.b04_banner_promote.field_date
+    - field.field.paragraph.b04_banner_promote.field_link
+    - field.field.paragraph.b04_banner_promote.field_media_bg_image
+    - field.field.paragraph.b04_banner_promote.field_media_image
+    - field.field.paragraph.b04_banner_promote.field_node_reference
+    - field.field.paragraph.b04_banner_promote.field_text
+    - field.field.paragraph.b04_banner_promote.field_title
+    - paragraphs.paragraphs_type.b04_banner_promote
+  module:
+    - datetime
+    - link
+    - text
+id: paragraph.b04_banner_promote.default
+targetEntityType: paragraph
+bundle: b04_banner_promote
+mode: default
+content:
+  field_date:
+    weight: 1
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_link:
+    weight: 5
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_media_bg_image:
+    type: entity_reference_entity_view
+    weight: 8
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_media_image:
+    weight: 7
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_node_reference:
+    weight: 6
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_text:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }

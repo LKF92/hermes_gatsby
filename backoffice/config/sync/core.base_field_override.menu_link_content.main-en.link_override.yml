@@ -1,0 +1,22 @@
+uuid: 40d8e519-ee57-4b55-8b4a-71da7777460c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.main-en
+  module:
+    - link
+id: menu_link_content.main-en.link_override
+field_name: link_override
+entity_type: menu_link_content
+bundle: main-en
+label: 'Traduction de l''url du lien'
+description: 'L''emplacement vers lequel pointe ce lien de menu. (Version traduisible)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

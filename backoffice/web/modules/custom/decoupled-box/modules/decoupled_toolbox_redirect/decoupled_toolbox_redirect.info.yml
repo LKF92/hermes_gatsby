@@ -1,0 +1,8 @@
+name: 'Decoupled Toolbox for Redirect Module'
+type: module
+description: 'Creates Computed field for url redirects and makes it compatible with Decoupled Toolbox.'
+core: 8.x
+package: 'Decoupled'
+dependencies:
+  - redirect:redirect
+  - decoupled_toolbox:decoupled_toolbox

@@ -1,0 +1,22 @@
+uuid: 7da4b61c-2206-4826-bf2c-cfdfa23120af
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.pdf_file
+id: node.pdf_file.promote
+field_name: promote
+entity_type: node
+bundle: pdf_file
+label: 'Promu en page d''accueil'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

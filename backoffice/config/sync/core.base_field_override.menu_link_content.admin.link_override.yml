@@ -1,0 +1,22 @@
+uuid: 46632ef6-8dd3-428c-a9a5-6d517a35ea05
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.admin
+  module:
+    - link
+id: menu_link_content.admin.link_override
+field_name: link_override
+entity_type: menu_link_content
+bundle: admin
+label: 'Link override'
+description: 'The location this menu link points to. (translatable version)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

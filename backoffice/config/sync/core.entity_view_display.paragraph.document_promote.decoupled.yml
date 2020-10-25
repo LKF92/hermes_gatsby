@@ -1,0 +1,77 @@
+uuid: 377356df-e7f1-478d-9fca-7e3e30da482d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.decoupled
+    - field.field.paragraph.document_promote.field_category
+    - field.field.paragraph.document_promote.field_head
+    - field.field.paragraph.document_promote.field_link
+    - field.field.paragraph.document_promote.field_media_bg_image
+    - field.field.paragraph.document_promote.field_node_reference
+    - field.field.paragraph.document_promote.field_sub_head
+    - paragraphs.paragraphs_type.document_promote
+  module:
+    - decoupled_toolbox
+id: paragraph.document_promote.decoupled
+targetEntityType: paragraph
+bundle: document_promote
+mode: decoupled
+content:
+  field_category:
+    type: decoupled_generic
+    weight: 1
+    region: content
+    label: visually_hidden
+    settings:
+      decoupled_field_key: text_before_title
+    third_party_settings: {  }
+  field_head:
+    type: decoupled_generic
+    weight: 2
+    region: content
+    label: visually_hidden
+    settings:
+      decoupled_field_key: title
+    third_party_settings: {  }
+  field_link:
+    weight: 5
+    label: visually_hidden
+    settings:
+      decoupled_field_key: link
+    third_party_settings: {  }
+    type: decoupled_link
+    region: content
+  field_media_bg_image:
+    weight: 4
+    label: visually_hidden
+    settings:
+      decoupled_field_key: background
+    third_party_settings: {  }
+    type: decoupled_entity_reference
+    region: content
+  field_node_reference:
+    weight: 6
+    label: visually_hidden
+    settings:
+      decoupled_field_key: document_id
+    third_party_settings: {  }
+    type: decoupled_entity_reference_id
+    region: content
+  field_sub_head:
+    type: decoupled_generic
+    weight: 3
+    region: content
+    label: visually_hidden
+    settings:
+      decoupled_field_key: text_sub_title
+    third_party_settings: {  }
+  type:
+    type: decoupled_entity_reference_id
+    weight: 0
+    region: content
+    label: visually_hidden
+    settings:
+      decoupled_field_key: bundle
+    third_party_settings: {  }
+hidden: {  }

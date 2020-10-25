@@ -1,0 +1,16 @@
+definitions:
+  admin_toolbar_tools__help:
+    menu_name: admin
+    parent: system.admin
+    weight: -100
+    expanded: false
+    enabled: true
+  entity__toolbar_menu_element__collection:
+    enabled: false
+    menu_name: admin
+    parent: system.admin_config_ui
+    expanded: false
+    weight: 0
+_core:
+  default_config_hash: jdY7AU0tU-QsjmiOw3W8vwpYMb-By--_MSFgbqKUTYM
+langcode: fr

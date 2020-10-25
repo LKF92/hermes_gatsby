@@ -1,0 +1,19 @@
+uuid: 23598730-70a6-41a2-8a69-b5c478edc121
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_b22_title
+    - paragraphs.paragraphs_type.b22_title_text
+id: paragraph.b22_title_text.field_b22_title
+field_name: field_b22_title
+entity_type: paragraph
+bundle: b22_title_text
+label: Titre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

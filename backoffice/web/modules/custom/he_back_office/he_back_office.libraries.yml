@@ -1,0 +1,5 @@
+table-drag.override:
+  version: 1.x
+  css:
+    component:
+      css/tabledrag_override.css: { }

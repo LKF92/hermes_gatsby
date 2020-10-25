@@ -1,0 +1,18 @@
+uuid: 4a43e8cd-0f1c-4bd8-b615-2c8ed9756f4e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.administration-finance
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: menu_link_content.administration-finance
+target_entity_type_id: menu_link_content
+target_bundle: administration-finance
+default_langcode: site_default
+language_alterable: false

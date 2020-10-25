@@ -1,0 +1,15 @@
+uuid: d9d9a5e5-1610-4394-9230-0283692e5d62
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.b06_press_releases.field_press_releases
+    - paragraphs.paragraphs_type.b06_press_releases
+id: paragraph.b06_press_releases.default
+targetEntityType: paragraph
+bundle: b06_press_releases
+mode: default
+content: {  }
+hidden:
+  field_press_releases: true
+  type: true

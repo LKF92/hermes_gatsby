@@ -1,0 +1,32 @@
+uuid: 8d79d906-97b8-4418-b7b0-0010a32318bf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.decoupled
+    - field.field.paragraph.b17_letter_to_shareholders.field_letter_to_shareholders
+    - paragraphs.paragraphs_type.b17_letter_to_shareholders
+  module:
+    - decoupled_toolbox
+id: paragraph.b17_letter_to_shareholders.decoupled
+targetEntityType: paragraph
+bundle: b17_letter_to_shareholders
+mode: decoupled
+content:
+  field_letter_to_shareholders:
+    weight: 1
+    label: above
+    settings:
+      decoupled_field_key: letter_to_shareholder_id
+    third_party_settings: {  }
+    type: decoupled_entity_reference_id
+    region: content
+  type:
+    type: decoupled_entity_reference_id
+    weight: 0
+    region: content
+    label: above
+    settings:
+      decoupled_field_key: bundle
+    third_party_settings: {  }
+hidden: {  }

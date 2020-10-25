@@ -1,0 +1,29 @@
+uuid: 98d38f48-c2fe-492d-81a5-0a29a03e824b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.b16_highlighting_rse_links.field_b16_rse_link_ref
+    - paragraphs.paragraphs_type.b16_highlighting_rse_links
+  module:
+    - paragraphs
+id: paragraph.b16_highlighting_rse_links.default
+targetEntityType: paragraph
+bundle: b16_highlighting_rse_links
+mode: default
+content:
+  field_b16_rse_link_ref:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: b16_rse_link
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,31 @@
+uuid: 2ed593da-2342-4f16-ae4d-2ed50399f975
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.b22_title_text.field_b22_text
+    - field.field.paragraph.b22_title_text.field_b22_title
+    - paragraphs.paragraphs_type.b22_title_text
+  module:
+    - text
+id: paragraph.b22_title_text.default
+targetEntityType: paragraph
+bundle: b22_title_text
+mode: default
+content:
+  field_b22_text:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_b22_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

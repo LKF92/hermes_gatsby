@@ -1,0 +1,55 @@
+uuid: 8659fecf-f610-4812-8033-0ea7d30a3850
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.b08_3_pilars.field_b08_pillar_1
+    - field.field.paragraph.b08_3_pilars.field_b08_pillar_2
+    - field.field.paragraph.b08_3_pilars.field_b08_pillar_3
+    - paragraphs.paragraphs_type.b08_3_pilars
+  module:
+    - paragraphs
+id: paragraph.b08_3_pilars.default
+targetEntityType: paragraph
+bundle: b08_3_pilars
+mode: default
+content:
+  field_b08_pillar_1:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+  field_b08_pillar_2:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+  field_b08_pillar_3:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

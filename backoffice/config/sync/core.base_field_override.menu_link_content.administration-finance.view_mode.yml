@@ -1,0 +1,18 @@
+uuid: 6b7dfcee-f03c-43ac-ab10-efbe299f5ff8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.administration-finance
+id: menu_link_content.administration-finance.view_mode
+field_name: view_mode
+entity_type: menu_link_content
+bundle: administration-finance
+label: 'Mode d''affichage'
+description: 'Per item view mode selector.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,10 @@
+uuid: bfa79e07-500a-4e1a-bb86-cc1fddd903fb
+langcode: fr
+status: true
+dependencies: {  }
+id: b08_pilar
+label: 'Pilier [B08]'
+icon_uuid: null
+icon_default: null
+description: "Un champ image<br>\r\nsous-titre : Je peux faire des sauts de ligne (retours chariot)<br>\r\ndes liens internes / externes"
+behavior_plugins: {  }

@@ -1,0 +1,21 @@
+uuid: 2f79633c-36f3-42ee-a226-572fd8158d03
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.build.field_publication_date
+  module:
+    - datetime
+    - he_publication_build
+id: build.build.field_publication_date
+field_name: field_publication_date
+entity_type: build
+bundle: build
+label: 'Date de publication'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

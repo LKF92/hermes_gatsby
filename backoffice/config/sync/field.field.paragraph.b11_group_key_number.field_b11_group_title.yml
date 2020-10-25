@@ -1,0 +1,21 @@
+uuid: 29d286dc-cc21-4c25-9a4a-1f81834a9b4f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_b11_group_title
+    - paragraphs.paragraphs_type.b11_group_key_number
+  module:
+    - text
+id: paragraph.b11_group_key_number.field_b11_group_title
+field_name: field_b11_group_title
+entity_type: paragraph
+bundle: b11_group_key_number
+label: Titre
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

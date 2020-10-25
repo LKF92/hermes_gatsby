@@ -1,0 +1,42 @@
+uuid: 16e5de34-0013-4fb4-92dd-afa733ea21a0
+langcode: fr
+status: true
+dependencies:
+  module:
+    - he_publication_build
+    - options
+id: build.field_status
+field_name: field_status
+entity_type: build
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '-1'
+      label: Error
+    -
+      value: '0'
+      label: 'To do'
+    -
+      value: '1'
+      label: Builded
+    -
+      value: '2'
+      label: 'Scheduled waitin to live'
+    -
+      value: '3'
+      label: 'Scheduled in live'
+    -
+      value: '4'
+      label: 'Current live'
+    -
+      value: '5'
+      label: Done
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

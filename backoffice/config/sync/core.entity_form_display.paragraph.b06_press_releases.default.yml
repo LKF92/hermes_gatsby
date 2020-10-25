@@ -1,0 +1,16 @@
+uuid: 0228991e-7412-45ae-b2b5-f567bbb4ee8b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.b06_press_releases.field_press_releases
+    - paragraphs.paragraphs_type.b06_press_releases
+id: paragraph.b06_press_releases.default
+targetEntityType: paragraph
+bundle: b06_press_releases
+mode: default
+content: {  }
+hidden:
+  created: true
+  field_press_releases: true
+  status: true

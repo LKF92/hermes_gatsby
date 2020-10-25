@@ -1,0 +1,10 @@
+uuid: 98954849-de7a-4f04-b860-a05484cf8852
+langcode: fr
+status: true
+dependencies:
+  module:
+    - he_publication_build
+id: build.decoupled
+label: Decoupled
+targetEntityType: build
+cache: true

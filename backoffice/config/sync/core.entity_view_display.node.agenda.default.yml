@@ -1,0 +1,45 @@
+uuid: 30de21ba-4214-4b15-9bc1-5570b9516191
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.agenda.field_date
+    - field.field.node.agenda.field_link
+    - node.type.agenda
+  module:
+    - datetime
+    - link
+    - user
+id: node.agenda.default
+targetEntityType: node
+bundle: agenda
+mode: default
+content:
+  field_date:
+    weight: 101
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: long_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_link:
+    weight: 102
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

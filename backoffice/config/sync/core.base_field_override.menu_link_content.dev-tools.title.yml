@@ -1,0 +1,18 @@
+uuid: 452a87d7-136b-4fbd-97bd-9a23b2a33fa7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.dev-tools
+id: menu_link_content.dev-tools.title
+field_name: title
+entity_type: menu_link_content
+bundle: dev-tools
+label: 'Titre du lien dans le menu'
+description: 'Le texte à utiliser pour ce lien dans le menu.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

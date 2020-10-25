@@ -1,0 +1,15 @@
+uuid: ba7469a3-9b9c-41a4-b37c-561d70097ffc
+langcode: fr
+status: true
+dependencies: {  }
+id: remote_audio_scene7
+label: 'Audio distant Scene7'
+bundle: remote_audio_scene_7
+source_plugin: scene7_audio
+source_plugin_configuration:
+  items_per_page: '20'
+  urlApi: 'http://www.scene7.com/IpsApi/xsd/2014-04-03'
+  user: florian.giral@mydropteam.com
+  password: $kill92iS$
+  appName: hermes-digital
+  appVersion: '1.0'

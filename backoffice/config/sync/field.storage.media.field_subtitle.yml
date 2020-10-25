@@ -1,0 +1,19 @@
+uuid: 598c58fd-237a-4c13-9234-959a0ddefced
+langcode: fr
+status: true
+dependencies:
+  module:
+    - link
+    - media
+id: media.field_subtitle
+field_name: field_subtitle
+entity_type: media
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

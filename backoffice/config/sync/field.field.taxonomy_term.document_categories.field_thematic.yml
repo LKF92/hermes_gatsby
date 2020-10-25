@@ -1,0 +1,21 @@
+uuid: 2925eb5a-47ac-41c6-b764-37a3e797364a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_thematic
+    - taxonomy.vocabulary.document_categories
+  module:
+    - options
+id: taxonomy_term.document_categories.field_thematic
+field_name: field_thematic
+entity_type: taxonomy_term
+bundle: document_categories
+label: Thématique
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

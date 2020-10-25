@@ -1,0 +1,18 @@
+uuid: f729248f-d3d4-44d7-920b-da7456a4e5cc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.main-en
+id: menu_link_content.main-en.redirect_source__path
+field_name: redirect_source__path
+entity_type: menu_link_content
+bundle: main-en
+label: 'URL redirigées'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

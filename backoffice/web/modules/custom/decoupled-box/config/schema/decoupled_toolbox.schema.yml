@@ -1,0 +1,7 @@
+field.formatter.settings.decoupled_generic:
+  type: mapping
+  label: 'Generic decoupled format settings'
+  mapping:
+    decoupled_field_key:
+      type: string
+      label: 'Decoupled field key'

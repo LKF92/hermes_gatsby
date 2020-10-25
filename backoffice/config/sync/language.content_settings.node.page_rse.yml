@@ -1,0 +1,18 @@
+uuid: 63e64df3-7e60-458f-b315-62a280d5ff6b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.page_rse
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.page_rse
+target_entity_type_id: node
+target_bundle: page_rse
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,40 @@
+uuid: c988212f-164e-4562-98b4-ad779bdfe82a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_b11_group_key_number
+    - paragraphs.paragraphs_type.b11_group_key_number
+    - paragraphs.paragraphs_type.key_number
+  module:
+    - entity_reference_revisions
+id: paragraph.b11_group_key_number.field_b11_group_key_number
+field_name: field_b11_group_key_number
+entity_type: paragraph
+bundle: b11_group_key_number
+label: 'Chiffres clés'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      key_number: key_number
+    target_bundles_drag_drop:
+      b02_text_image_right_left_legend:
+        weight: 5
+        enabled: false
+      b04_banner_promote:
+        weight: 6
+        enabled: false
+      b11_group_key_number:
+        weight: 7
+        enabled: false
+      key_number:
+        enabled: true
+        weight: 8
+field_type: entity_reference_revisions

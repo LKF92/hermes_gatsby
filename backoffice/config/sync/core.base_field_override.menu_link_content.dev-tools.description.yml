@@ -1,0 +1,18 @@
+uuid: 3111ca05-9b85-47e9-8917-200a34fa04a7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.dev-tools
+id: menu_link_content.dev-tools.description
+field_name: description
+entity_type: menu_link_content
+bundle: dev-tools
+label: Description
+description: 'S''affiche au survol du lien du menu.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

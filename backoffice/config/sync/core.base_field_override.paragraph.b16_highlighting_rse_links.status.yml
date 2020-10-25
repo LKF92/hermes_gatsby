@@ -1,0 +1,22 @@
+uuid: 2a27fbb3-241a-4b7e-9b14-17cb931c474d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.b16_highlighting_rse_links
+id: paragraph.b16_highlighting_rse_links.status
+field_name: status
+entity_type: paragraph
+bundle: b16_highlighting_rse_links
+label: Publié
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

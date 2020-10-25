@@ -1,0 +1,41 @@
+uuid: 126be17b-fb8e-4a59-9789-9585fa085e33
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.decoupled
+    - field.field.paragraph.b19_audio_video_player.field_b19_media_audio_video
+    - field.field.paragraph.b19_audio_video_player.field_b19_title
+    - paragraphs.paragraphs_type.b19_audio_video_player
+  module:
+    - decoupled_toolbox
+id: paragraph.b19_audio_video_player.decoupled
+targetEntityType: paragraph
+bundle: b19_audio_video_player
+mode: decoupled
+content:
+  field_b19_media_audio_video:
+    type: decoupled_entity_reference
+    weight: 2
+    label: above
+    settings:
+      decoupled_field_key: audio_video
+    third_party_settings: {  }
+    region: content
+  field_b19_title:
+    weight: 1
+    label: above
+    settings:
+      decoupled_field_key: title
+    third_party_settings: {  }
+    type: decoupled_text
+    region: content
+  type:
+    type: decoupled_entity_reference_id
+    weight: 0
+    region: content
+    label: above
+    settings:
+      decoupled_field_key: bundle
+    third_party_settings: {  }
+hidden: {  }

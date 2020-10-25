@@ -1,0 +1,6 @@
+name: File Size
+description: Save file field size value to another field.
+package: Custom
+
+type: module
+core: 8.x

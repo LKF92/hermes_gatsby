@@ -1,0 +1,77 @@
+uuid: 67cdae8f-2909-4298-ba49-6b6ea20b64ce
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.decoupled
+    - field.field.paragraph.b02_text_image_right_left_legend.field_caption
+    - field.field.paragraph.b02_text_image_right_left_legend.field_image_alignment
+    - field.field.paragraph.b02_text_image_right_left_legend.field_link
+    - field.field.paragraph.b02_text_image_right_left_legend.field_media_image
+    - field.field.paragraph.b02_text_image_right_left_legend.field_text
+    - field.field.paragraph.b02_text_image_right_left_legend.field_title
+    - paragraphs.paragraphs_type.b02_text_image_right_left_legend
+  module:
+    - decoupled_toolbox
+id: paragraph.b02_text_image_right_left_legend.decoupled
+targetEntityType: paragraph
+bundle: b02_text_image_right_left_legend
+mode: decoupled
+content:
+  field_caption:
+    type: decoupled_generic
+    weight: 4
+    region: content
+    label: visually_hidden
+    settings:
+      decoupled_field_key: caption
+    third_party_settings: {  }
+  field_image_alignment:
+    type: decoupled_generic
+    weight: 5
+    region: content
+    label: visually_hidden
+    settings:
+      decoupled_field_key: alignment
+    third_party_settings: {  }
+  field_link:
+    type: decoupled_link
+    weight: 6
+    region: content
+    label: visually_hidden
+    settings:
+      decoupled_field_key: link
+    third_party_settings: {  }
+  field_media_image:
+    type: decoupled_entity_reference
+    weight: 3
+    region: content
+    label: visually_hidden
+    settings:
+      decoupled_field_key: image
+    third_party_settings: {  }
+  field_text:
+    type: decoupled_text
+    weight: 2
+    region: content
+    label: visually_hidden
+    settings:
+      decoupled_field_key: text
+    third_party_settings: {  }
+  field_title:
+    type: decoupled_generic
+    weight: 1
+    region: content
+    label: visually_hidden
+    settings:
+      decoupled_field_key: title
+    third_party_settings: {  }
+  type:
+    type: decoupled_entity_reference_id
+    weight: 0
+    region: content
+    label: visually_hidden
+    settings:
+      decoupled_field_key: bundle
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,45 @@
+uuid: 422676e7-3b57-49cb-9f12-0b85d01a2f0e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.b08_pilar.field_b08_image
+    - field.field.paragraph.b08_pilar.field_b08_link
+    - field.field.paragraph.b08_pilar.field_b08_title
+    - paragraphs.paragraphs_type.b08_pilar
+  module:
+    - link
+id: paragraph.b08_pilar.default
+targetEntityType: paragraph
+bundle: b08_pilar
+mode: default
+content:
+  field_b08_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_b08_link:
+    weight: 2
+    label: above
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_b08_title:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }

@@ -1,0 +1,66 @@
+uuid: 6773c4cb-87c8-444c-93ad-191a6b9abc65
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.menu_link_content.decoupled
+    - system.menu.footer-en
+  module:
+    - decoupled_toolbox
+id: menu_link_content.footer-en.decoupled
+targetEntityType: menu_link_content
+bundle: footer-en
+mode: decoupled
+content:
+  enabled:
+    label: visually_hidden
+    type: decoupled_boolean
+    weight: 5
+    region: content
+    settings:
+      decoupled_field_key: status
+    third_party_settings: {  }
+  expanded:
+    label: visually_hidden
+    type: decoupled_boolean
+    weight: 4
+    region: content
+    settings:
+      decoupled_field_key: expanded
+    third_party_settings: {  }
+  link:
+    type: decoupled_link
+    weight: 1
+    region: content
+    label: visually_hidden
+    settings:
+      decoupled_field_key: link
+    third_party_settings: {  }
+  parent:
+    type: decoupled_generic
+    weight: 2
+    region: content
+    label: visually_hidden
+    settings:
+      decoupled_field_key: parent
+    third_party_settings: {  }
+  title:
+    label: visually_hidden
+    type: decoupled_generic
+    weight: 0
+    region: content
+    settings:
+      decoupled_field_key: title
+    third_party_settings: {  }
+  weight:
+    label: visually_hidden
+    type: decoupled_integer
+    weight: 3
+    region: content
+    settings:
+      decoupled_field_key: weight
+    third_party_settings: {  }
+hidden:
+  children: true
+  langcode: true
+  redirect_source__path: true

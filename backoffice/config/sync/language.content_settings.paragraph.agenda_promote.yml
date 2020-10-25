@@ -1,0 +1,18 @@
+uuid: ad2cdaa5-4da3-48ee-b443-c84f33eb95b2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.agenda_promote
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.agenda_promote
+target_entity_type_id: paragraph
+target_bundle: agenda_promote
+default_langcode: site_default
+language_alterable: false

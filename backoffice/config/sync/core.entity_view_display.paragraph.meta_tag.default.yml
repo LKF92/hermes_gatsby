@@ -1,0 +1,47 @@
+uuid: 9446aa8a-9e1b-4e31-a05a-5527d05d5f2b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.meta_tag.field_meta_description
+    - field.field.paragraph.meta_tag.field_meta_og_description
+    - field.field.paragraph.meta_tag.field_meta_og_title
+    - field.field.paragraph.meta_tag.field_meta_title
+    - paragraphs.paragraphs_type.meta_tag
+id: paragraph.meta_tag.default
+targetEntityType: paragraph
+bundle: meta_tag
+mode: default
+content:
+  field_meta_description:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_meta_og_description:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_meta_og_title:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_meta_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  type: true

@@ -1,0 +1,18 @@
+uuid: 6ce177a9-9e5a-4bdd-bd90-d9056c0e820e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.b16_rse_link
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.b16_rse_link
+target_entity_type_id: paragraph
+target_bundle: b16_rse_link
+default_langcode: site_default
+language_alterable: false

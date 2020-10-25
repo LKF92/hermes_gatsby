@@ -1,0 +1,21 @@
+uuid: d02bf5c9-4039-4b4f-b6c7-ea3b5aa5b612
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_date
+    - paragraphs.paragraphs_type.b04_banner_promote
+  module:
+    - datetime
+id: paragraph.b04_banner_promote.field_date
+field_name: field_date
+entity_type: paragraph
+bundle: b04_banner_promote
+label: Date
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

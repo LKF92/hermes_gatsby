@@ -1,0 +1,10 @@
+uuid: fce31091-86fa-4c8b-8e8c-8f026d958640
+langcode: fr
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.decoupled
+label: Decoupled
+targetEntityType: paragraph
+cache: true

@@ -1,0 +1,8 @@
+login_redirection:
+  anonymous: null
+  authenticated: /
+  contributor_rse: /admin/content/moderated/page-rse
+  contributor_financial: /admin/content/page
+  administrator: /admin/content
+  super_admin: /admin/content
+exclude_urls: ''

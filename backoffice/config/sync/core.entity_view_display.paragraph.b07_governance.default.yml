@@ -1,0 +1,41 @@
+uuid: 44fd01ae-44e7-4083-828a-0e95be65ac7c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.b07_governance.field_image_teaser
+    - field.field.paragraph.b07_governance.field_text
+    - field.field.paragraph.b07_governance.field_title
+    - paragraphs.paragraphs_type.b07_governance
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.b07_governance.default
+targetEntityType: paragraph
+bundle: b07_governance
+mode: default
+content:
+  field_image_teaser:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_text:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }

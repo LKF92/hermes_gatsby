@@ -1,0 +1,54 @@
+uuid: 96c36a8c-8343-422a-bac0-bc157d498e70
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_page_type
+field_name: field_page_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: homepage
+      label: Accueil
+    -
+      value: action
+      label: 'Action Hermès'
+    -
+      value: publications
+      label: Publications
+    -
+      value: regulated_information
+      label: 'Informations réglementées'
+    -
+      value: other_legal_information
+      label: 'Autres informations juridiques'
+    -
+      value: officers
+      label: 'Mandataires sociaux'
+    -
+      value: general_assembly
+      label: 'Assemblée générale'
+    -
+      value: rse
+      label: RSE
+    -
+      value: agenda
+      label: Agenda
+    -
+      value: contact
+      label: Contact
+    -
+      value: content
+      label: Contenu
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

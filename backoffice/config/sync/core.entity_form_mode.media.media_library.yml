@@ -1,0 +1,15 @@
+uuid: fc0d8dfd-df28-427f-a1d7-78f40a847303
+langcode: fr
+status: true
+dependencies:
+  enforced:
+    module:
+      - media_library
+  module:
+    - media
+_core:
+  default_config_hash: pkq0uj-IoqEQRBOP_ddUDV0ZJ-dKQ_fLcppsEDF2UO8
+id: media.media_library
+label: 'Bibliothèque Media'
+targetEntityType: media
+cache: true

@@ -1,0 +1,48 @@
+uuid: 1632d8e3-90ea-4453-a840-586e1ac83e42
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.pdf_file.field_file
+    - field.field.node.pdf_file.field_file_type
+    - field.field.node.pdf_file.field_filesize
+    - node.type.pdf_file
+  module:
+    - file
+    - user
+id: node.pdf_file.default
+targetEntityType: node
+bundle: pdf_file
+mode: default
+content:
+  field_file:
+    weight: 101
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_file_type:
+    weight: 104
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_filesize:
+    weight: 105
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

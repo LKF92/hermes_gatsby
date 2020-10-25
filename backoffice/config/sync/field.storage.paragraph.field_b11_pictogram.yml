@@ -1,0 +1,20 @@
+uuid: 04f1072f-74f4-4af2-b1f3-6ca81718a4f8
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+    - paragraphs
+id: paragraph.field_b11_pictogram
+field_name: field_b11_pictogram
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

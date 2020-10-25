@@ -1,0 +1,87 @@
+uuid: 8b41d93f-b2d1-4df6-855a-056aaf11026f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph__reference
+    - paragraphs.paragraphs_type.agenda_promote
+    - paragraphs.paragraphs_type.b13_agenda_document
+    - paragraphs.paragraphs_type.document_promote
+  module:
+    - entity_reference_revisions
+id: paragraph.b13_agenda_document.field_paragraph__reference
+field_name: field_paragraph__reference
+entity_type: paragraph
+bundle: b13_agenda_document
+label: 'Item de gauche'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      agenda_promote: agenda_promote
+      document_promote: document_promote
+    target_bundles_drag_drop:
+      agenda_promote:
+        enabled: true
+        weight: 6
+      b02_text_image_right_left_legend:
+        weight: 6
+        enabled: false
+      b04_banner_promote:
+        weight: 7
+        enabled: false
+      b13_agenda_document:
+        weight: 8
+        enabled: false
+      document_promote:
+        enabled: true
+        weight: 10
+      b03_body:
+        weight: 22
+        enabled: false
+      b06_press_releases:
+        weight: 24
+        enabled: false
+      b07_governance:
+        weight: 25
+        enabled: false
+      b08_3_pilars:
+        weight: 26
+        enabled: false
+      b08_pilar:
+        weight: 27
+        enabled: false
+      b11_group_key_number:
+        weight: 28
+        enabled: false
+      b16_highlighting_rse_links:
+        weight: 30
+        enabled: false
+      b16_rse_link:
+        weight: 31
+        enabled: false
+      b17_letter_to_shareholders:
+        weight: 32
+        enabled: false
+      b19_audio_video_player:
+        weight: 33
+        enabled: false
+      b22_title_text:
+        weight: 34
+        enabled: false
+      image_title_texte_link:
+        weight: 36
+        enabled: false
+      key_number:
+        weight: 37
+        enabled: false
+      meta_tag:
+        weight: 38
+        enabled: false
+field_type: entity_reference_revisions

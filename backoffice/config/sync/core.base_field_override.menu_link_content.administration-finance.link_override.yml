@@ -1,0 +1,22 @@
+uuid: 045ee65f-b2df-4307-b573-97b2b832e0e1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.administration-finance
+  module:
+    - link
+id: menu_link_content.administration-finance.link_override
+field_name: link_override
+entity_type: menu_link_content
+bundle: administration-finance
+label: 'Link override'
+description: 'The location this menu link points to. (translatable version)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

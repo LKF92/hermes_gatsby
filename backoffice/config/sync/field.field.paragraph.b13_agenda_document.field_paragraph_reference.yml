@@ -1,0 +1,45 @@
+uuid: 5d12e636-a9c2-4116-b2b7-00e34e453062
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_reference
+    - paragraphs.paragraphs_type.agenda_promote
+    - paragraphs.paragraphs_type.b13_agenda_document
+    - paragraphs.paragraphs_type.document_promote
+  module:
+    - entity_reference_revisions
+id: paragraph.b13_agenda_document.field_paragraph_reference
+field_name: field_paragraph_reference
+entity_type: paragraph
+bundle: b13_agenda_document
+label: 'Item de droite'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      agenda_promote: agenda_promote
+      document_promote: document_promote
+    target_bundles_drag_drop:
+      agenda_promote:
+        enabled: true
+        weight: 6
+      b02_text_image_right_left_legend:
+        weight: 6
+        enabled: false
+      b04_banner_promote:
+        weight: 7
+        enabled: false
+      b13_agenda_document:
+        weight: 8
+        enabled: false
+      document_promote:
+        enabled: true
+        weight: 10
+field_type: entity_reference_revisions

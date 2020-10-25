@@ -1,0 +1,18 @@
+uuid: 879a6635-6f73-495e-b151-290797bd3332
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.year
+id: taxonomy_term.year.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: year
+label: Metatags
+description: 'The meta tags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

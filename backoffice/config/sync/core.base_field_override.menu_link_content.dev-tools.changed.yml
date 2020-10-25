@@ -1,0 +1,18 @@
+uuid: 44ba09cd-e057-4f8d-931e-060554723ee3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.dev-tools
+id: menu_link_content.dev-tools.changed
+field_name: changed
+entity_type: menu_link_content
+bundle: dev-tools
+label: Modifié
+description: 'Le moment où le lien de menu a été modifié pour la dernière fois.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

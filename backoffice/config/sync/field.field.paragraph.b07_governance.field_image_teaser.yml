@@ -1,0 +1,40 @@
+uuid: 06bfc69f-05a6-43aa-993a-d09ffbb7bc2f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_teaser
+    - paragraphs.paragraphs_type.b07_governance
+    - paragraphs.paragraphs_type.image_title_texte_link
+  module:
+    - entity_reference_revisions
+id: paragraph.b07_governance.field_image_teaser
+field_name: field_image_teaser
+entity_type: paragraph
+bundle: b07_governance
+label: 'Accroche Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      image_title_texte_link: image_title_texte_link
+    target_bundles_drag_drop:
+      b02_text_image_right_left_legend:
+        weight: 5
+        enabled: false
+      b04_banner_promote:
+        weight: 6
+        enabled: false
+      b07_governance:
+        weight: 7
+        enabled: false
+      image_title_texte_link:
+        enabled: true
+        weight: 8
+field_type: entity_reference_revisions

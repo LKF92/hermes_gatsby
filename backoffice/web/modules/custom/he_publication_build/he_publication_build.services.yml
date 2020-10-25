@@ -1,0 +1,14 @@
+services:
+  build.code_build_provider:
+    class: Aws\CodeBuild\CodeBuildClient
+    factory: Drupal\he_publication_build\Aws\CodeBuildProviderClientFactory::create
+    arguments: ['@settings']
+
+  build.request:
+    class: Drupal\he_publication_build\Service\BuildRequest
+    factory: Drupal\he_publication_build\Service\BuildRequestFactory::create
+    arguments: ['@settings', '@build.code_build_provider', '@logger.channel.default']
+
+  build.helper:
+    class: Drupal\he_publication_build\Service\BuildHelper
+    arguments: ['@entity_type.manager']

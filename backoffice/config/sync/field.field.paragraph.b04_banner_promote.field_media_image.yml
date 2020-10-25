@@ -1,0 +1,28 @@
+uuid: 08406129-c837-48ad-b295-124033830bdd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_image
+    - media.type.image
+    - paragraphs.paragraphs_type.b04_banner_promote
+id: paragraph.b04_banner_promote.field_media_image
+field_name: field_media_image
+entity_type: paragraph
+bundle: b04_banner_promote
+label: 'Image principale'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

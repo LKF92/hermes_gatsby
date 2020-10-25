@@ -1,0 +1,41 @@
+uuid: 54dab8ad-2f4b-4dba-8314-c5f855c14380
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.build.decoupled
+    - field.field.build.build.field_document
+    - field.field.build.build.field_is_schedule
+    - field.field.build.build.field_publication_date
+    - field.field.build.build.field_status
+  module:
+    - he_publication_build
+id: build.build.decoupled
+targetEntityType: build
+bundle: build
+mode: decoupled
+content:
+  created:
+    label: above
+    type: timestamp
+    weight: 20
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_document: true
+  field_is_schedule: true
+  field_publication_date: true
+  field_status: true
+  redirect_source__path: true

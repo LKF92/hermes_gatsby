@@ -1,0 +1,18 @@
+uuid: 3644a921-515c-4f79-94d8-cc4e706dfbf3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.b17_letter_to_shareholders
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.b17_letter_to_shareholders
+target_entity_type_id: paragraph
+target_bundle: b17_letter_to_shareholders
+default_langcode: site_default
+language_alterable: false

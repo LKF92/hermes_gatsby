@@ -1,0 +1,18 @@
+uuid: 59bb2123-a923-460e-a7c8-0ea6a4cca283
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.b02_text_image_right_left_legend
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.b02_text_image_right_left_legend
+target_entity_type_id: paragraph
+target_bundle: b02_text_image_right_left_legend
+default_langcode: site_default
+language_alterable: false

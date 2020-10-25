@@ -1,0 +1,54 @@
+uuid: e9365321-5146-4ee7-b253-1df5d8c66328
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.decoupled
+    - field.field.taxonomy_term.document_categories.field_thematic
+    - taxonomy.vocabulary.document_categories
+  module:
+    - decoupled_toolbox
+id: taxonomy_term.document_categories.decoupled
+targetEntityType: taxonomy_term
+bundle: document_categories
+mode: decoupled
+content:
+  field_thematic:
+    type: decoupled_generic
+    weight: 0
+    region: content
+    label: visually_hidden
+    settings:
+      decoupled_field_key: thematic
+    third_party_settings: {  }
+  name:
+    label: visually_hidden
+    type: decoupled_generic
+    weight: 1
+    region: content
+    settings:
+      decoupled_field_key: name
+    third_party_settings: {  }
+  parent:
+    type: decoupled_entity_reference_id
+    weight: 2
+    region: content
+    label: visually_hidden
+    settings:
+      decoupled_field_key: parent
+    third_party_settings: {  }
+  weight:
+    type: decoupled_integer
+    weight: 3
+    region: content
+    label: visually_hidden
+    settings:
+      decoupled_field_key: weight
+    third_party_settings: {  }
+hidden:
+  changed: true
+  description: true
+  langcode: true
+  redirect_source__path: true
+  status: true
+  tid: true

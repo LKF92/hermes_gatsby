@@ -1,0 +1,28 @@
+uuid: ac731529-c3ae-4152-a0fe-87372da71c08
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_letter_to_shareholders
+    - node.type.letter_to_shareholders
+    - paragraphs.paragraphs_type.b17_letter_to_shareholders
+id: paragraph.b17_letter_to_shareholders.field_letter_to_shareholders
+field_name: field_letter_to_shareholders
+entity_type: paragraph
+bundle: b17_letter_to_shareholders
+label: 'Lettre aux actionnaires'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      letter_to_shareholders: letter_to_shareholders
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

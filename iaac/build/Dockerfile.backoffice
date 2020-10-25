@@ -1,0 +1,54 @@
+FROM 594067985087.dkr.ecr.eu-west-1.amazonaws.com/hec-bo_base:1.0
+
+### environment variable
+ENV ENVIRONMENT develop
+ENV PROJET hecbo
+ENV APACHE_RUN_USER www-data
+ENV APACHE_RUN_GROUP www-data
+ENV APACHE_LOG_DIR /var/log/apache2
+ENV APACHE_PID_FILE /var/run/apache2.pid
+ENV APACHE_RUN_DIR /var/run/apache2
+ENV APACHE_LOCK_DIR /var/lock/apache2
+ENV APACHE_SERVERADMIN admin@localhost
+ENV APACHE_DOCUMENTROOT /var/www/hecbo/web
+
+### PKG
+RUN apt-get update \
+ && apt-get -y install git ssh mysql-client libxml2-dev \
+ && apt-get clean
+
+
+RUN docker-php-ext-install soap
+
+### APACHE
+RUN mkdir -p /var/www/$PROJECT
+
+### PROJECT-NAME
+#### SRC
+ADD codebase /var/www/hecbo/
+
+#### CONFIGURATION OVERRIDE
+#ADD override/$ENVIRONMENT /tmp/override
+#RUN rsync -Pax /tmp/override/ /var/www/hecbo/
+## TO DO : rsync doesn't work
+
+ADD override/develop/web/sites/default/settings.local.php /var/www/hecbo/web/sites/default/settings.local.php
+
+
+RUN chown -R www-data:www-data /var/www/hecbo
+
+### Surcharge du VHOST
+RUN rm -rf /etc/apache2/sites-enabled \
+ && rm -f /etc/apache2/sites-available/*
+ADD config/apache2/001-hecate.develop.conf /etc/apache2/sites-available/
+RUN mkdir -p /etc/apache2/sites-enabled \
+ && ln -s /etc/apache2/sites-available/001-hecate.develop.conf /etc/apache2/sites-enabled/
+
+### CLEANUP
+RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+WORKDIR /var/www/hecbo/
+
+### BOOT
+ENTRYPOINT [ "apache2" ]
+CMD [ "-DFOREGROUND" ]

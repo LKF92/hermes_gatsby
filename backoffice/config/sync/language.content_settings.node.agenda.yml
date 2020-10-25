@@ -1,0 +1,18 @@
+uuid: 8ff6e906-4164-4627-bc44-acecb3948fe7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.agenda
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.agenda
+target_entity_type_id: node
+target_bundle: agenda
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,45 @@
+uuid: 659ed677-41d3-4d98-b69f-a9458023f726
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.decoupled
+    - field.field.media.remote_audio_scene_7.field_media_remote_audio_scene7
+    - media.type.remote_audio_scene_7
+  module:
+    - decoupled_toolbox
+id: media.remote_audio_scene_7.decoupled
+targetEntityType: media
+bundle: remote_audio_scene_7
+mode: decoupled
+content:
+  bundle:
+    type: decoupled_entity_reference_id
+    weight: 0
+    region: content
+    label: above
+    settings:
+      decoupled_field_key: bundle
+    third_party_settings: {  }
+  field_media_remote_audio_scene7:
+    label: visually_hidden
+    weight: 2
+    settings:
+      decoupled_field_key: url
+    third_party_settings: {  }
+    type: decoupled_link
+    region: content
+  name:
+    type: decoupled_generic
+    weight: 1
+    region: content
+    label: above
+    settings:
+      decoupled_field_key: name
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  redirect_source__path: true
+  thumbnail: true
+  uid: true

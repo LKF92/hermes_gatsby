@@ -1,0 +1,18 @@
+uuid: b7fb38d6-622a-4bd9-858c-019a71d9f73c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.administration-rse
+id: menu_link_content.administration-rse.view_mode
+field_name: view_mode
+entity_type: menu_link_content
+bundle: administration-rse
+label: 'Mode d''affichage'
+description: 'Per item view mode selector.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

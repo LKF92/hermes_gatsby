@@ -1,0 +1,18 @@
+uuid: ab029623-c231-42a0-9ffb-9d635e03fe89
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.b07_governance
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.b07_governance
+target_entity_type_id: paragraph
+target_bundle: b07_governance
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,58 @@
+uuid: a3add346-40d9-445e-8102-80b17c313573
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.footer-en
+id: menu_link_content.footer-en.default
+targetEntityType: menu_link_content
+bundle: footer-en
+mode: default
+content:
+  children:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  enabled:
+    label: hidden
+    type: boolean
+    weight: 0
+    region: content
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+  expanded:
+    label: hidden
+    type: boolean
+    weight: 0
+    region: content
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  weight:
+    label: hidden
+    type: number_integer
+    weight: 0
+    region: content
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  link: true
+  parent: true
+  redirect_source__path: true

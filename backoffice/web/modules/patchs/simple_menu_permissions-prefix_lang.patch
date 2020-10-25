@@ -1,0 +1,15 @@
+diff --git a/simple_menu_permissions.module b/simple_menu_permissions.module
+index abcf576..cdda988 100644
+--- a/simple_menu_permissions.module
++++ b/simple_menu_permissions.module
+@@ -83,8 +83,8 @@ function simple_menu_permissions_menu_link_content_create_access(AccountInterfac
+   $uri = \Drupal::request()->getRequestUri();
+   $uri_array = explode('/', $uri);
+ 
+-  if (count($uri_array) >= 5) {
+-    $menu_id = Html::escape($uri_array[5]);
++  if (count($uri_array) >= 6) {
++    $menu_id = Html::escape($uri_array[6]);
+     if ($account->hasPermission('add new links to ' . $menu_id . ' menu')) {
+       return AccessResult::allowed();
+     }

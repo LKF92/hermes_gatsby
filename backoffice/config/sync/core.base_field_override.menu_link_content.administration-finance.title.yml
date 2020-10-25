@@ -1,0 +1,18 @@
+uuid: 2733917b-0043-4914-812a-57e7f247e087
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.administration-finance
+id: menu_link_content.administration-finance.title
+field_name: title
+entity_type: menu_link_content
+bundle: administration-finance
+label: 'Titre du lien dans le menu'
+description: 'Le texte à utiliser pour ce lien dans le menu.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

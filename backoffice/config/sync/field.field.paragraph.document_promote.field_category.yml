@@ -1,0 +1,19 @@
+uuid: 7696fde3-dd18-4929-898b-25a42601c511
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_category
+    - paragraphs.paragraphs_type.document_promote
+id: paragraph.document_promote.field_category
+field_name: field_category
+entity_type: paragraph
+bundle: document_promote
+label: Catégorie
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

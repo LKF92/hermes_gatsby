@@ -1,0 +1,25 @@
+uuid: 85c425e5-997c-44a6-8f9d-4a715c1b94f0
+langcode: fr
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.agenda.field_date
+    - field.field.node.agenda.field_link
+    - node.type.agenda
+  module:
+    - user
+id: node.agenda.teaser
+targetEntityType: node
+bundle: agenda
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_date: true
+  field_link: true
+  langcode: true

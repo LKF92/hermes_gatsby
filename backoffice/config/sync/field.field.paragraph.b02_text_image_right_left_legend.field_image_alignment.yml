@@ -1,0 +1,23 @@
+uuid: d01fc709-8773-4eb2-9e8a-563e0d069f84
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_alignment
+    - paragraphs.paragraphs_type.b02_text_image_right_left_legend
+  module:
+    - options
+id: paragraph.b02_text_image_right_left_legend.field_image_alignment
+field_name: field_image_alignment
+entity_type: paragraph
+bundle: b02_text_image_right_left_legend
+label: 'Alignement de l''image'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

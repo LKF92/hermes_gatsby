@@ -1,0 +1,106 @@
+uuid: 06b3da13-dc9f-4da3-a110-429579bebc66
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.decoupled
+    - field.field.node.page_rse.field_background_image
+    - field.field.node.page_rse.field_body
+    - field.field.node.page_rse.field_introductory_text
+    - field.field.node.page_rse.field_meta_tag
+    - field.field.node.page_rse.field_page_rse_type
+    - node.type.page_rse
+  module:
+    - decoupled_toolbox
+    - user
+id: node.page_rse.decoupled
+targetEntityType: node
+bundle: page_rse
+mode: decoupled
+content:
+  changed:
+    type: decoupled_generic
+    weight: 7
+    region: content
+    label: visually_hidden
+    settings:
+      decoupled_field_key: datetime_modification
+    third_party_settings: {  }
+  field_background_image:
+    type: decoupled_entity_reference
+    weight: 3
+    region: content
+    label: visually_hidden
+    settings:
+      decoupled_field_key: background
+    third_party_settings: {  }
+  field_body:
+    type: decoupled_entity_reference
+    weight: 4
+    region: content
+    label: visually_hidden
+    settings:
+      decoupled_field_key: body
+    third_party_settings: {  }
+  field_introductory_text:
+    type: decoupled_text
+    weight: 2
+    region: content
+    label: visually_hidden
+    settings:
+      decoupled_field_key: introduction
+    third_party_settings: {  }
+  field_meta_tag:
+    type: decoupled_entity_reference
+    weight: 9
+    region: content
+    label: visually_hidden
+    settings:
+      decoupled_field_key: meta_tag
+    third_party_settings: {  }
+  field_page_rse_type:
+    type: decoupled_generic
+    weight: 0
+    region: content
+    label: visually_hidden
+    settings:
+      decoupled_field_key: type
+    third_party_settings: {  }
+  path:
+    type: decoupled_path
+    weight: 5
+    region: content
+    label: visually_hidden
+    settings:
+      decoupled_field_key: alias
+    third_party_settings: {  }
+  redirect_source__path:
+    type: decoupled_generic
+    weight: 6
+    region: content
+    label: visually_hidden
+    settings:
+      decoupled_field_key: redirection
+    third_party_settings: {  }
+  status:
+    type: decoupled_boolean
+    weight: 8
+    region: content
+    label: visually_hidden
+    settings:
+      decoupled_field_key: status
+    third_party_settings: {  }
+  title:
+    label: visually_hidden
+    type: decoupled_generic
+    weight: 1
+    region: content
+    settings:
+      decoupled_field_key: title
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  created: true
+  langcode: true
+  links: true
+  nid: true

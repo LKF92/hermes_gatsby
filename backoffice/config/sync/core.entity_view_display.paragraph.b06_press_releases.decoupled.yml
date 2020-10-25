@@ -1,0 +1,25 @@
+uuid: 40c7c74f-8f8b-4ed0-bf53-e6cf020b54bd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.decoupled
+    - field.field.paragraph.b06_press_releases.field_press_releases
+    - paragraphs.paragraphs_type.b06_press_releases
+  module:
+    - decoupled_toolbox
+id: paragraph.b06_press_releases.decoupled
+targetEntityType: paragraph
+bundle: b06_press_releases
+mode: decoupled
+content:
+  type:
+    type: decoupled_entity_reference_id
+    weight: 0
+    region: content
+    label: above
+    settings:
+      decoupled_field_key: bundle
+    third_party_settings: {  }
+hidden:
+  field_press_releases: true

@@ -1,0 +1,228 @@
+uuid: 6bfaf531-64d1-41c1-b483-22a7c4f7a6b1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.document.field_datetime_publication
+    - field.field.node.document.field_document_category
+    - field.field.node.document.field_file_download
+    - field.field.node.document.field_mention_eaccessible
+    - field.field.node.document.field_showdatetime
+    - field.field.node.document.field_showtime
+    - field.field.node.document.field_url
+    - field.field.node.document.field_year
+    - node.type.document
+  module:
+    - datetime
+    - field_group
+    - inline_entity_form
+    - link
+    - path
+    - term_reference_tree
+third_party_settings:
+  field_group:
+    group_fichier_url:
+      children:
+        - group_fichier
+        - group_url
+      parent_name: ''
+      weight: 1
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: 'Fichier / Url'
+    group_fichier:
+      children:
+        - field_file_download
+        - field_mention_eaccessible
+      parent_name: group_fichier_url
+      weight: 20
+      format_type: tab
+      region: content
+      format_settings:
+        description: 'Veuillez choisir un fichier ou une url pour votre document.'
+        formatter: open
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Fichier
+    group_url:
+      children:
+        - field_url
+      parent_name: group_fichier_url
+      weight: 21
+      format_type: tab
+      region: content
+      format_settings:
+        description: 'Veuillez choisir un fichier ou une url pour votre document.'
+        formatter: closed
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Url
+    group_categorie_et_classificatio:
+      children:
+        - field_year
+        - field_document_category
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      region: content
+      format_settings:
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Année & catégorie(s) du document'
+id: node.document.default
+targetEntityType: node
+bundle: document
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_datetime_publication:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_document_category:
+    weight: 6
+    settings:
+      leaves_only: true
+      cascading_selection: 0
+      max_depth: 10
+      start_minimized: false
+      select_parents: false
+    third_party_settings: {  }
+    type: term_reference_tree
+    region: content
+  field_file_download:
+    weight: 2
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: fichier
+      label_plural: fichiers
+      allow_new: true
+      match_operator: CONTAINS
+      revision: false
+      collapsible: false
+      collapsed: false
+      allow_existing: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_mention_eaccessible:
+    weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_showdatetime:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_showtime:
+    weight: 5
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_url:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_year:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 6
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  publish_on:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_timestamp
+    region: content
+  scheduler_settings:
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 12
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 7
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+  unpublish_on:
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_timestamp
+    region: content
+  url_redirects:
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  moderation_state: true
+  promote: true
+  sticky: true

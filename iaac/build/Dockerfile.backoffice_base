@@ -1,0 +1,52 @@
+FROM composer:1.8 as composer
+# -------------------------
+FROM php:7.2-apache-stretch
+
+RUN echo "Europe/Paris" > /etc/timezone
+RUN dpkg-reconfigure -f noninteractive tzdata
+RUN export TERM=xterm
+
+RUN /bin/sed -i '/jessie-updates/d' /etc/apt/sources.list
+
+RUN apt-get update \
+ && apt-get -y install --no-install-recommends gettext-base git curl bzip2 xz-utils rsync ssmtp wget \
+    libjpeg62-turbo-dev libpng-dev libpq-dev wget zlib1g-dev libmemcached-dev imagemagick build-essential automake libtool \
+    libapache2-mod-geoip libgeoip-dev \
+ && apt-get clean
+
+RUN a2enmod status && \
+    a2enmod deflate && \
+    a2enmod headers && \
+    a2enmod expires && \
+    a2enmod ssl && \
+    a2enmod rewrite && \
+    a2dismod -f autoindex
+
+RUN ln -sf /proc/self/fd/1 /var/log/apache2/access.log \
+ && ln -sf /proc/self/fd/2 /var/log/apache2/error.log
+
+RUN pecl install memcached-3.0.3
+
+# install the PHP extensions we need
+RUN set -ex \
+ && docker-php-ext-configure gd \
+    --with-jpeg-dir=/usr \
+    --with-png-dir=/usr \
+  && docker-php-ext-install -j "$(nproc)" gd mbstring opcache pdo pdo_mysql pdo_pgsql zip \
+  && apt-mark manual \
+    libjpeg62-turbo \
+    libpq5 \
+  && apt-get purge -y --auto-remove libjpeg62-turbo-dev libpng-dev libpq-dev
+
+RUN { \
+    echo 'opcache.memory_consumption=128'; \
+    echo 'opcache.interned_strings_buffer=8'; \
+    echo 'opcache.max_accelerated_files=4000'; \
+    echo 'opcache.revalidate_freq=60'; \
+    echo 'opcache.fast_shutdown=1'; \
+    echo 'opcache.enable_cli=1'; \
+} > /usr/local/etc/php/conf.d/opcache-recommended.ini
+
+COPY --from=composer /usr/bin/composer /usr/local/bin/composer
+
+RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*

@@ -1,0 +1,61 @@
+uuid: 0946aa3a-070f-4827-a54d-6d61da5d7ebd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.decoupled
+    - field.field.node.letter_to_shareholders.field_document_ref
+    - field.field.node.letter_to_shareholders.field_image
+    - field.field.node.letter_to_shareholders.field_text
+    - field.field.node.letter_to_shareholders.field_title
+    - node.type.letter_to_shareholders
+  module:
+    - decoupled_toolbox
+    - user
+id: node.letter_to_shareholders.decoupled
+targetEntityType: node
+bundle: letter_to_shareholders
+mode: decoupled
+content:
+  field_document_ref:
+    weight: 3
+    label: above
+    settings:
+      decoupled_field_key: document_id
+    third_party_settings: {  }
+    type: decoupled_entity_reference_id
+    region: content
+  field_image:
+    type: decoupled_entity_reference
+    weight: 2
+    label: above
+    settings:
+      decoupled_field_key: image
+    third_party_settings: {  }
+    region: content
+  field_text:
+    weight: 1
+    label: above
+    settings:
+      decoupled_field_key: text
+    third_party_settings: {  }
+    type: decoupled_text
+    region: content
+  field_title:
+    weight: 0
+    label: above
+    settings:
+      decoupled_field_key: title
+    third_party_settings: {  }
+    type: decoupled_generic
+    region: content
+hidden:
+  changed: true
+  created: true
+  langcode: true
+  links: true
+  nid: true
+  path: true
+  redirect_source__path: true
+  status: true
+  title: true

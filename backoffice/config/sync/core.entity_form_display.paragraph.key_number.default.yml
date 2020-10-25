@@ -1,0 +1,55 @@
+uuid: 09a1475e-9333-4852-adec-184582a1caa4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.key_number.field_b11_description
+    - field.field.paragraph.key_number.field_b11_key_number
+    - field.field.paragraph.key_number.field_b11_pictogram
+    - paragraphs.paragraphs_type.key_number
+  module:
+    - maxlength
+    - media_library
+    - text
+id: paragraph.key_number.default
+targetEntityType: paragraph
+bundle: key_number
+mode: default
+content:
+  field_b11_description:
+    weight: 2
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: null
+        maxlength_js_label: 'Contenu limité à @limit caractères, restant : <strong>@remaining</strong>'
+        maxlength_js_enforce: false
+        maxlength_js_truncate_html: false
+    type: text_textarea
+    region: content
+  field_b11_key_number:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_b11_pictogram:
+    type: media_library_widget
+    weight: 0
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
+  translation: true

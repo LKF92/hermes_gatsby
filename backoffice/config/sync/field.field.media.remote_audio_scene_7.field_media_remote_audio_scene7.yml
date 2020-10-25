@@ -1,0 +1,23 @@
+uuid: 7a78de3a-984b-4777-9d41-b43ff4f12082
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_remote_audio_scene7
+    - media.type.remote_audio_scene_7
+  module:
+    - link
+id: media.remote_audio_scene_7.field_media_remote_audio_scene7
+field_name: field_media_remote_audio_scene7
+entity_type: media
+bundle: remote_audio_scene_7
+label: 'Remote audio Scene7'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

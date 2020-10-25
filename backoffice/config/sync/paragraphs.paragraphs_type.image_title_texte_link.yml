@@ -1,0 +1,10 @@
+uuid: b29fc2c1-56b7-4aab-b9af-9f8e67f054c8
+langcode: fr
+status: true
+dependencies: {  }
+id: image_title_texte_link
+label: 'Image + Titre + Texte + Lien'
+icon_uuid: null
+icon_default: null
+description: "Une image. (optionnel) <br/>\r\nUn titre en dessous de l'image. (optionnel) <br/>\r\nUn Texte de description en dessous de l'mage. (optionnel) <br>\r\nUn lien vers une page intérieure / extérieure. (optionnel)"
+behavior_plugins: {  }

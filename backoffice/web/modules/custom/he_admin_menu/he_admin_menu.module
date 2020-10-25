@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * @file
+ * This is the module to alter menu admin toolbar.
+ */
+
+/**
+ * Implements hook_toolbar_alter().
+ *
+ * Remove default toolbar Administration menu.
+ */
+function he_admin_menu_toolbar_alter(&$items) {
+  $user = Drupal::currentUser();
+  $uid = $user->id();
+
+  if ($uid == 1) {
+    return;
+  }
+
+  $roles = $user->getRoles();
+
+  if (!in_array('super_admin', $roles)) {
+    unset($items['administration']);
+    unset($items['administration_search']);
+  }
+}

@@ -1,0 +1,18 @@
+uuid: 8eb16d24-a22b-4dca-85f8-db0a98513f21
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.footer-en
+id: menu_link_content.footer-en.description
+field_name: description
+entity_type: menu_link_content
+bundle: footer-en
+label: Description
+description: 'S''affiche au survol du lien du menu.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

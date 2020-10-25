@@ -1,0 +1,8 @@
+uuid: b4aa74a8-a3ed-4a0e-a9e2-5c72d9710dbe
+langcode: fr
+status: true
+dependencies: {  }
+id: administration
+label: Administration
+description: 'Liens des tâches d''administration simplifiés. Réservé aux profils administrateur.'
+locked: false

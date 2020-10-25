@@ -1,0 +1,18 @@
+uuid: 1fe4fa49-e780-42d0-801e-4727e68b0908
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.administration
+id: menu_link_content.administration.changed
+field_name: changed
+entity_type: menu_link_content
+bundle: administration
+label: Modifié
+description: 'Le moment où le lien de menu a été modifié pour la dernière fois.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

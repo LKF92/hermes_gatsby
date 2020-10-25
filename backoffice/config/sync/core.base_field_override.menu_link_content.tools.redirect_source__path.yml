@@ -1,0 +1,18 @@
+uuid: 2fa0e64f-e37c-42de-9707-b46849305623
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+id: menu_link_content.tools.redirect_source__path
+field_name: redirect_source__path
+entity_type: menu_link_content
+bundle: tools
+label: 'URL redirigées'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

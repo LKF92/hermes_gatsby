@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Publication Build module.
+ */
+
+require_once "includes/global.inc";
+require_once "includes/forms.inc";
+require_once "includes/fields.inc";
+require_once "includes/alters.inc";

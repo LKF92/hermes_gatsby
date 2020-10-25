@@ -1,0 +1,28 @@
+uuid: c9330d2c-4a48-4f3f-8884-c9db32c8bdbf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - media.type.image
+    - node.type.letter_to_shareholders
+id: node.letter_to_shareholders.field_image
+field_name: field_image
+entity_type: node
+bundle: letter_to_shareholders
+label: Image
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

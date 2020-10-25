@@ -1,0 +1,10 @@
+uuid: 7d94e5a6-c89b-4b84-b950-37265a57da03
+langcode: fr
+status: true
+dependencies: {  }
+id: meta_tag
+label: 'Balises Meta'
+icon_uuid: null
+icon_default: null
+description: 'Permet d''enrichir un contenu d''informations descriptives du contenu lui-même. Par exemple, le titre à employer, la description.'
+behavior_plugins: {  }

@@ -1,0 +1,40 @@
+uuid: 856266ee-1a5b-4eea-8fd2-393400333955
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_b08_pillar_3
+    - paragraphs.paragraphs_type.b08_3_pilars
+    - paragraphs.paragraphs_type.b08_pilar
+  module:
+    - entity_reference_revisions
+id: paragraph.b08_3_pilars.field_b08_pillar_3
+field_name: field_b08_pillar_3
+entity_type: paragraph
+bundle: b08_3_pilars
+label: 'Pilier 3'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      b08_pilar: b08_pilar
+    target_bundles_drag_drop:
+      b02_text_image_right_left_legend:
+        weight: 5
+        enabled: false
+      b04_banner_promote:
+        weight: 6
+        enabled: false
+      b08_3_pilars:
+        weight: 7
+        enabled: false
+      b08_pilar:
+        enabled: true
+        weight: 8
+field_type: entity_reference_revisions
