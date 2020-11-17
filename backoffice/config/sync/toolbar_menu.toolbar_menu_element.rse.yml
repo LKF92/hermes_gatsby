@@ -1,9 +1,0 @@
-uuid: 83fb2806-3468-4e5d-8bd8-8827292deb6b
-langcode: fr
-status: true
-dependencies: {  }
-id: rse
-label: RSE
-weight: null
-menu: administration-rse
-rewrite_label: true

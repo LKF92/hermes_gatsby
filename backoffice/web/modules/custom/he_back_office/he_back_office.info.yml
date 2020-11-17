@@ -1,7 +1,0 @@
-name: Back Office Optimization
-description: Customize features that enhanced the contributor experience.
-package: Custom
-
-type: module
-core: 8.x
-core_version_requirement: ^8 || ^9

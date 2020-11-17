@@ -1,8 +1,0 @@
-uuid: 5f2b4f11-a820-41b5-9857-98df0b32956b
-langcode: en
-status: true
-dependencies: {  }
-id: footer-en
-label: "Pied de page\tEN"
-description: 'Liens d''informations sur le site en anglais.'
-locked: false

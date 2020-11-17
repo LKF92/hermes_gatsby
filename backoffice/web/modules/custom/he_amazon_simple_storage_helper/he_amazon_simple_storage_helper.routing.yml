@@ -1,7 +1,0 @@
-he_amazon_simple_storage_helper.document_file.access:
-  path: '/api/check-pdf-access'
-  methods: [POST]
-  defaults:
-    _controller: '\Drupal\he_amazon_simple_storage_helper\Controller\DocumentFileAccessController::access'
-  requirements:
-    _permission: 'access content'

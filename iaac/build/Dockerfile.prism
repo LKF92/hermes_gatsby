@@ -1,7 +1,0 @@
-FROM stoplight/prism:3
-ENV PORT=4010
-ENV NODE_ENV=development
-ADD swagger/ /app/
-
-EXPOSE 4010
-CMD ["mock", "-h", "0.0.0.0", "-d", "/app/openapi.yaml"]

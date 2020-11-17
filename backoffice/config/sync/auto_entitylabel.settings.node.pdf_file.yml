@@ -1,6 +1,0 @@
-status: 1
-pattern: '[node:field_file:entity:basename]'
-escape: false
-dependencies:
-  config:
-    - node.type.pdf_file

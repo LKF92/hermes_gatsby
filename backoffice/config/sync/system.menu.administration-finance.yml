@@ -1,8 +1,0 @@
-uuid: 24b15371-3776-4ea0-92fe-0d8740701917
-langcode: fr
-status: true
-dependencies: {  }
-id: administration-finance
-label: 'Contribution Finance'
-description: 'Liens des tâches de contribution. Réservé aux profils finance.'
-locked: false

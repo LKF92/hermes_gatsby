@@ -1,8 +1,0 @@
-entity.build.settings:
-  title: Settings
-  route_name: entity.build.settings
-  base_route: entity.build.settings
-entity.build.edit_form:
-  title: Edit
-  route_name: entity.build.edit_form
-  base_route: entity.build.canonical

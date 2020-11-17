@@ -1,7 +1,0 @@
-type: timestamp
-string: Passed
-endpoint: /health
-maintainence_access: false
-_core:
-  default_config_hash: mNsn9VD-pjQRotV_HEVXD9xU56xoPbUsHmdf4jgRsdQ
-langcode: fr

@@ -1,8 +1,0 @@
-uuid: 836471d2-384b-434c-ab6f-a7f4b69b83be
-langcode: en
-status: true
-dependencies: {  }
-id: main-en
-label: 'Navigation principale EN'
-description: 'Liens de section du site en anglais.'
-locked: false

@@ -1,6 +1,0 @@
-services:
-  he_back_office.commands:
-    class: \Drupal\he_back_office\Commands\CustomCommands
-    tags:
-      - { name: drush.command }
-    arguments: ['@entity_type.manager', '@logger.factory']

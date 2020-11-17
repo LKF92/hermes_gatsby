@@ -1,5 +1,0 @@
-tree:
-  js:
-    he_term_reference_tree_extend.js: {}
-  dependencies:
-    - term_reference_tree/term_reference_tree_js

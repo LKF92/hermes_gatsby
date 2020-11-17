@@ -1,9 +1,0 @@
-uuid: 99dad9c8-9837-474c-a01e-f1782c3f8006
-langcode: fr
-status: true
-dependencies: {  }
-id: finance
-label: Finance
-weight: null
-menu: administration-finance
-rewrite_label: true

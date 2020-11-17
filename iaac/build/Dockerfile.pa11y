@@ -1,3 +1,0 @@
-FROM dropteam/pa11y-dashboard
-
-ADD ./config/pa11y/production.json /app/config/production.json

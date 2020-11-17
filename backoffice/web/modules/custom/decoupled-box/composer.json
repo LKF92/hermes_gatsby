@@ -1,6 +1,0 @@
-{
-  "name": "drupal/decoupled_toolbox",
-  "description": "Contains common features for decoupled websites.",
-  "type": "drupal-module",
-  "license": "GPL-2.0+"
-}

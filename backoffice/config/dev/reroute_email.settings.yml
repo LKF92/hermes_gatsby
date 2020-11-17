@@ -1,8 +1,0 @@
-enable: true
-address: equipe.technique.digital.projets@hermes.com
-whitelist: ''
-description: true
-message: true
-mailkeys: ''
-langcode: fr
-log: true

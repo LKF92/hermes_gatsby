@@ -1,5 +1,0 @@
-name: 'Decoupled Toolbox'
-type: module
-description: 'Contains common features for decoupled websites.'
-core: 8.x
-package: 'Decoupled'

@@ -1,8 +1,0 @@
-uuid: effeb4f1-4c8a-4455-8dfe-a66429f4b54a
-langcode: fr
-status: true
-dependencies: {  }
-id: administration-rse
-label: 'Contribution RSE'
-description: 'Liens des tâches de contribution simplifiés. Réservé aux profils RSE.'
-locked: false

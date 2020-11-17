@@ -1,7 +1,0 @@
-name: 'Term Reference Tree Extend'
-description: 'If checkbox group selected then the other checkbox group is disabled and vice versa.'
-package: Custom
-core: 8.x
-dependencies:
-  - term_reference_tree
-type: module
